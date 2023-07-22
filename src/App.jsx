@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Products from "./components/Products";
+import { Footer } from "./components/Footer";
 import { products as initialProducts } from "./mocks/products.json";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
   return (
     <>
       <Products products={filteredProducts} />
+      <Footer />
     </>
   );
 }
